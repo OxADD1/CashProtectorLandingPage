@@ -198,4 +198,15 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Initialize with German
   updateContent('de');
+  
+  // Add click handler to close mobile navbar when any nav link is clicked
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+        bsCollapse.hide();
+      }
+    });
+  });
 });
