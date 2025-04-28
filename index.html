@@ -180,11 +180,12 @@
       opacity: 1;
     }
     
-    .language-btn img {
-      width: 24px;
-      height: 16px;
-      object-fit: cover;
-      border-radius: 2px;
+    .language-btn {
+      font-size: 0.8rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 4px;
     }
   </style>
 </head>
@@ -210,10 +211,10 @@
           </li>
           <li class="nav-item d-flex align-items-center language-switcher">
             <button class="language-btn active me-2" data-lang="de" title="Deutsch">
-              <img src="https://flagcdn.com/w40/de.png" alt="German Flag">
+              🇩🇪
             </button>
             <button class="language-btn" data-lang="en" title="English">
-              <img src="https://flagcdn.com/w40/gb.png" alt="British Flag">
+              🇬🇧
             </button>
           </li>
         </ul>
@@ -224,7 +225,7 @@
   <!-- Hero Section -->
   <section class="hero-section">
     <div class="container text-center">
-      <img src="img/logo ohne hintergrund.png" alt="CashProtector Icon" height="120" class="mb-3">
+      <img src="img/logo ohne hintergrund.png" alt="CashProtector Icon" height="180" class="mb-3">
       <h1 class="display-4 fw-bold mb-3">CashProtector</h1>
       <h2 class="text-primary fw-bold" data-i18n="hero.subtitle">Vereinfachen Sie Ihre persönlichen Finanzen</h2>
       <p class="lead mb-4" data-i18n="hero.description">Verpassen Sie keine Transaktion mehr - Sparen Sie Zeit & bleiben Sie organisiert</p>
@@ -506,32 +507,32 @@
         <!-- Language names without icons -->
         <div class="col-4 col-md-2">
           <div class="p-3 rounded bg-light text-center">
-            <p class="mb-0 fw-bold" data-i18n="languages.english">Englisch</p>
+            <p class="mb-0 fw-bold">🇬🇧 <span data-i18n="languages.english">Englisch</span></p>
           </div>
         </div>
         <div class="col-4 col-md-2">
           <div class="p-3 rounded bg-light text-center">
-            <p class="mb-0 fw-bold" data-i18n="languages.german">Deutsch</p>
+            <p class="mb-0 fw-bold">🇩🇪 <span data-i18n="languages.german">Deutsch</span></p>
           </div>
         </div>
         <div class="col-4 col-md-2">
           <div class="p-3 rounded bg-light text-center">
-            <p class="mb-0 fw-bold" data-i18n="languages.spanish">Spanisch</p>
+            <p class="mb-0 fw-bold">🇪🇸 <span data-i18n="languages.spanish">Spanisch</span></p>
           </div>
         </div>
         <div class="col-4 col-md-2">
           <div class="p-3 rounded bg-light text-center">
-            <p class="mb-0 fw-bold" data-i18n="languages.french">Französisch</p>
+            <p class="mb-0 fw-bold">🇫🇷 <span data-i18n="languages.french">Französisch</span></p>
           </div>
         </div>
         <div class="col-4 col-md-2">
           <div class="p-3 rounded bg-light text-center">
-            <p class="mb-0 fw-bold" data-i18n="languages.italian">Italienisch</p>
+            <p class="mb-0 fw-bold">🇮🇹 <span data-i18n="languages.italian">Italienisch</span></p>
           </div>
         </div>
         <div class="col-4 col-md-2">
           <div class="p-3 rounded bg-light text-center">
-            <p class="mb-0 fw-bold" data-i18n="languages.russian">Russisch</p>
+            <p class="mb-0 fw-bold">🇷🇺 <span data-i18n="languages.russian">Russisch</span></p>
           </div>
         </div>
       </div>
