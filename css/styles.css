@@ -6,8 +6,18 @@
 
 /* Scroll padding for anchor links */
 html {
-  scroll-padding-top: 80px; /* Height of navbar plus some extra space */
+  scroll-padding-top: 100px; /* Increased padding to ensure clearing the navbar */
   scroll-behavior: smooth;
+}
+
+/* Add anchor targets before actual content */
+section[id]::before {
+  content: "";
+  display: block;
+  height: 100px; /* Same as scroll-padding-top */
+  margin-top: -100px; /* Negative margin to pull content back up */
+  visibility: hidden;
+  pointer-events: none;
 }
 
 body {

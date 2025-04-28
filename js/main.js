@@ -201,11 +201,33 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Add click handler to close mobile navbar when any nav link is clicked
   document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-    link.addEventListener('click', function() {
+    link.addEventListener('click', function(e) {
       const navbarCollapse = document.querySelector('.navbar-collapse');
       if (navbarCollapse && navbarCollapse.classList.contains('show')) {
         const bsCollapse = new bootstrap.Collapse(navbarCollapse);
         bsCollapse.hide();
+      }
+      
+      // Handle anchor links with manual scrolling
+      const href = this.getAttribute('href');
+      if (href.startsWith('#') && href.length > 1) {
+        e.preventDefault();
+        const targetId = href.substring(1);
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+          // Get the navbar height
+          const navbarHeight = document.querySelector('.navbar').offsetHeight;
+          
+          // Calculate the target scroll position with offset
+          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 20;
+          
+          // Smooth scroll to target
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
       }
     });
   });
