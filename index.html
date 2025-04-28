@@ -62,11 +62,38 @@
       margin: 0 auto 20px;
       font-size: 30px;
       color: #212529;
+      position: relative;
+    }
+    
+    .feature-icon i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     
     .card {
       transition: transform 0.3s, box-shadow 0.3s;
       height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+    }
+    
+    .card-title {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    
+    .card-text {
+      text-align: center;
     }
     
     .card:hover {
@@ -176,6 +203,154 @@
     </div>
   </section>
 
+    <!-- Features Section -->
+    <section id="features" class="section-padding">
+      <div class="container">
+        <h2 class="text-center section-heading">Hauptfunktionen</h2>
+        
+        <div class="row g-4">
+          <!-- Feature 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 text-center">
+              <div class="card-body">
+                <div class="feature-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h4 class="card-title">Umfassendes Finanztracking</h4>
+                <p class="card-text">Verfolgen Sie Ausgaben, Einkommen und Transfers zwischen Konten mit anpassbaren Kategorien.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Feature 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 text-center">
+              <div class="card-body">
+                <div class="feature-icon">
+                  <i class="fas fa-chart-pie"></i>
+                </div>
+                <h4 class="card-title">Visuelle Berichte</h4>
+                <p class="card-text">Sehen Sie Ihre Ausgabenmuster mit intuitiven Diagrammen und überwachen Sie Kontostände im Zeitverlauf.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Feature 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 text-center">
+              <div class="card-body">
+                <div class="feature-icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h4 class="card-title">Sicher & Privat</h4>
+                <p class="card-text">Alle Ihre Finanzdaten bleiben auf Ihrem Gerät oder in Ihrem persönlichen iCloud-Konto.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Feature 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 text-center">
+              <div class="card-body">
+                <div class="feature-icon">
+                  <i class="fas fa-receipt"></i>
+                </div>
+                <h4 class="card-title">Belegverwaltung</h4>
+                <p class="card-text">Scannen Sie Belege direkt mit Ihrer Kamera und speichern Sie sie lokal mit Ihren Transaktionen.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Feature 5 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 text-center">
+              <div class="card-body">
+                <div class="feature-icon">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <h4 class="card-title">iCloud Synchronisation</h4>
+                <p class="card-text">Synchronisieren Sie nahtlos über alle Ihre Apple-Geräte und greifen Sie überall auf Ihre Finanzdaten zu.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Feature 6 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 text-center">
+              <div class="card-body">
+                <div class="feature-icon">
+                  <i class="fas fa-magic"></i>
+                </div>
+                <h4 class="card-title">Intelligente Automatisierung</h4>
+                <p class="card-text">Schnellzugriff, wiederkehrende Transaktionen und Home-Screen-Widgets für schnelle Transaktionseingabe.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Feature 7 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 text-center">
+              <div class="card-body">
+                <div class="feature-icon">
+                  <i class="fas fa-paint-brush"></i>
+                </div>
+                <h4 class="card-title">Anpassbare Erfahrung</h4>
+                <p class="card-text">Wählen Sie zwischen Hell- und Dunkelmodus und nutzen Sie die App in mehreren Sprachen.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Feature 8 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 text-center">
+              <div class="card-body">
+                <div class="feature-icon">
+                  <i class="fas fa-file-export"></i>
+                </div>
+                <h4 class="card-title">Import & Export</h4>
+                <p class="card-text">Importieren Sie Transaktionen aus CSV-Dateien und exportieren Sie Ihre Daten für andere Tools.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- Screenshots Section -->
+   <section class="section-padding bg-light-gray">
+    <div class="container">
+      <h2 class="text-center section-heading">App Screenshots</h2>
+      
+      <div class="row g-4">
+        <!-- Updated with actual screenshot images -->
+        <div class="col-6 col-md-3">
+          <img src="./img/1.jpg" class="img-fluid app-screenshot" alt="CashProtector Screenshot 1">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="./img/2.jpg" class="img-fluid app-screenshot" alt="CashProtector Screenshot 2">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="./img/3.jpg" class="img-fluid app-screenshot" alt="CashProtector Screenshot 3">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="./img/4.jpg" class="img-fluid app-screenshot" alt="CashProtector Screenshot 4">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="./img/5.jpg" class="img-fluid app-screenshot" alt="CashProtector Screenshot 5">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="./img/6.jpg" class="img-fluid app-screenshot" alt="CashProtector Screenshot 6">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="./img/7.jpg" class="img-fluid app-screenshot" alt="CashProtector Screenshot 7">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="./img/8.jpg" class="img-fluid app-screenshot" alt="CashProtector Screenshot 8">
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Overview Section -->
   <section class="section-padding">
     <div class="container">
@@ -234,118 +409,7 @@
     </div>
   </section>
 
-  <!-- Features Section -->
-  <section id="features" class="section-padding bg-light-gray">
-    <div class="container">
-      <h2 class="text-center section-heading">Hauptfunktionen</h2>
-      
-      <div class="row g-4">
-        <!-- Feature 1 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 border-0 text-center">
-            <div class="card-body">
-              <div class="feature-icon">
-                <i class="fas fa-chart-line"></i>
-              </div>
-              <h4 class="card-title">Umfassendes Finanztracking</h4>
-              <p class="card-text">Verfolgen Sie Ausgaben, Einkommen und Transfers zwischen Konten mit anpassbaren Kategorien.</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Feature 2 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 border-0 text-center">
-            <div class="feature-icon">
-              <i class="fas fa-chart-pie"></i>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Visuelle Berichte</h4>
-              <p class="card-text">Sehen Sie Ihre Ausgabenmuster mit intuitiven Diagrammen und überwachen Sie Kontostände im Zeitverlauf.</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Feature 3 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 border-0 text-center">
-            <div class="feature-icon">
-              <i class="fas fa-shield-alt"></i>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Sicher & Privat</h4>
-              <p class="card-text">Alle Ihre Finanzdaten bleiben auf Ihrem Gerät oder in Ihrem persönlichen iCloud-Konto.</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Feature 4 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 border-0 text-center">
-            <div class="feature-icon">
-              <i class="fas fa-receipt"></i>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Belegverwaltung</h4>
-              <p class="card-text">Scannen Sie Belege direkt mit Ihrer Kamera und speichern Sie sie lokal mit Ihren Transaktionen.</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Feature 5 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 border-0 text-center">
-            <div class="feature-icon">
-              <i class="fas fa-cloud"></i>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">iCloud Synchronisation</h4>
-              <p class="card-text">Synchronisieren Sie nahtlos über alle Ihre Apple-Geräte und greifen Sie überall auf Ihre Finanzdaten zu.</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Feature 6 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 border-0 text-center">
-            <div class="feature-icon">
-              <i class="fas fa-magic"></i>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Intelligente Automatisierung</h4>
-              <p class="card-text">Schnellzugriff, wiederkehrende Transaktionen und Home-Screen-Widgets für schnelle Transaktionseingabe.</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Feature 7 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 border-0 text-center">
-            <div class="feature-icon">
-              <i class="fas fa-paint-brush"></i>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Anpassbare Erfahrung</h4>
-              <p class="card-text">Wählen Sie zwischen Hell- und Dunkelmodus und nutzen Sie die App in mehreren Sprachen.</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Feature 8 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 border-0 text-center">
-            <div class="feature-icon">
-              <i class="fas fa-file-export"></i>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Import & Export</h4>
-              <p class="card-text">Importieren Sie Transaktionen aus CSV-Dateien und exportieren Sie Ihre Daten für andere Tools.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <!-- Privacy Section -->
   <section class="section-padding">
@@ -392,40 +456,7 @@
     </div>
   </section>
 
-  <!-- Screenshots Section -->
-  <section class="section-padding bg-light-gray">
-    <div class="container">
-      <h2 class="text-center section-heading">App Screenshots</h2>
-      
-      <div class="row g-4">
-        <!-- Updated with actual screenshot images -->
-        <div class="col-6 col-md-3">
-          <img src="./img/1.jpg" class="img-fluid app-screenshot" alt="CashProtector Screenshot 1">
-        </div>
-        <div class="col-6 col-md-3">
-          <img src="./img/2.jpg" class="img-fluid app-screenshot" alt="CashProtector Screenshot 2">
-        </div>
-        <div class="col-6 col-md-3">
-          <img src="./img/3.jpg" class="img-fluid app-screenshot" alt="CashProtector Screenshot 3">
-        </div>
-        <div class="col-6 col-md-3">
-          <img src="./img/4.jpg" class="img-fluid app-screenshot" alt="CashProtector Screenshot 4">
-        </div>
-        <div class="col-6 col-md-3">
-          <img src="./img/5.jpg" class="img-fluid app-screenshot" alt="CashProtector Screenshot 5">
-        </div>
-        <div class="col-6 col-md-3">
-          <img src="./img/6.jpg" class="img-fluid app-screenshot" alt="CashProtector Screenshot 6">
-        </div>
-        <div class="col-6 col-md-3">
-          <img src="./img/7.jpg" class="img-fluid app-screenshot" alt="CashProtector Screenshot 7">
-        </div>
-        <div class="col-6 col-md-3">
-          <img src="./img/8.jpg" class="img-fluid app-screenshot" alt="CashProtector Screenshot 8">
-        </div>
-      </div>
-    </div>
-  </section>
+ 
 
   <!-- Languages Section -->
   <section class="section-padding">
