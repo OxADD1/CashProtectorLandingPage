@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (lang === 'en') {
         img.src = `./img/en/${imgId}.jpg`;
       } else {
-        img.src = `./img/${imgId}.jpg`;
+        img.src = `./img/DE${imgId}.jpg`;
       }
     });
     
