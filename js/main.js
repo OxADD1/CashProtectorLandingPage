@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
       'nav.contact': 'Kontakt',
       'hero.subtitle': 'Vereinfachen Sie Ihre persönlichen Finanzen',
       'hero.description': 'Verpassen Sie keine Transaktion mehr - Sparen Sie Zeit & bleiben Sie organisiert',
-      'hero.download': 'Beta App herunterladen',
+      'hero.download': 'App herunterladen',
       'hero.explore': 'Funktionen erkunden',
       'features.title': 'Hauptfunktionen',
       'features.tracking.title': 'Umfassendes Finanztracking',
@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
       'features.automation.desc': 'Schnellzugriff, wiederkehrende Transaktionen und Home-Screen-Widgets für schnelle Transaktionseingabe.',
       'features.customize.title': 'Anpassbare Erfahrung',
       'features.customize.desc': 'Wählen Sie zwischen Hell- und Dunkelmodus und nutzen Sie die App in mehreren Sprachen.',
+      'features.ai.title': 'KI-Finanzcoach',
+      'features.ai.desc': 'Budgetplanung, Ausgabenanalyse und Spartipps basierend auf Ihren echten Transaktionsdaten.',
       'features.export.title': 'Import & Export',
       'features.export.desc': 'Importieren Sie Transaktionen aus CSV-Dateien und exportieren Sie Ihre Daten für andere Tools.',
       'screenshots.title': 'App Screenshots',
@@ -59,13 +61,24 @@ document.addEventListener('DOMContentLoaded', function() {
       'languages.russian': 'Russisch',
       'download.title': 'Jetzt herunterladen',
       'download.subtitle': 'Nehmen Sie die Kontrolle über Ihre persönlichen Finanzen, ohne Kompromisse bei Privatsphäre oder Sicherheit einzugehen.',
-      'download.button': 'Beta App herunterladen',
+      'download.button': 'App herunterladen',
       'download.compatibility': 'CashProtector ist für iPhone und iPad mit iOS 18 oder neuer verfügbar.',
       'contact.title': 'Kontakt',
       'contact.subtitle': 'Haben Sie Fragen zur App? Kontaktieren Sie mich gerne!',
       'contact.support.title': 'Support erhalten',
       'contact.support.desc': 'Bei Fragen zur App oder für Feedback können Sie mich über folgende Wege erreichen:',
       'contact.support.email': 'E-Mail',
+      'ai.title1': 'Treffen Sie Ihren persönlichen',
+      'ai.title2': 'KI-Finanzcoach',
+      'ai.description': 'Lassen Sie sich von künstlicher Intelligenz dabei helfen, bessere Finanzentscheidungen zu treffen. Unser KI-Coach analysiert Ihre Ausgabenmuster und gibt Ihnen personalisierte Empfehlungen.',
+      'ai.feature1.title': 'Intelligente Budgetplanung',
+      'ai.feature1.desc': 'Erstellen Sie automatisch Budgets basierend auf der bewährten 50/30/20-Regel und Ihren echten Ausgabendaten.',
+      'ai.feature2.title': 'Ausgabenanalyse',
+      'ai.feature2.desc': 'Entdecken Sie versteckte Sparpotentiale und erhalten Sie Tipps zur Optimierung Ihrer Ausgaben.',
+      'ai.feature3.title': 'Personalisierte Spartipps',
+      'ai.feature3.desc': 'Erhalten Sie maßgeschneiderte Empfehlungen basierend auf Ihren individuellen Finanzgewohnheiten.',
+      'ai.demo.title': 'KI-Finanzcoach',
+      'ai.demo.input': 'Fragen Sie nach Budgettipps...',
       'footer.imprint': 'Impressum',
       'footer.privacy': 'Datenschutz',
       'footer.app-privacy': 'Datenschutz CashProtector'
@@ -76,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
       'nav.contact': 'Contact',
       'hero.subtitle': 'Simplify Your Personal Finances',
       'hero.description': 'Never miss a transaction again - Save time & stay organized',
-      'hero.download': 'Download Beta App',
+      'hero.download': 'Download App',
       'hero.explore': 'Explore Features',
       'features.title': 'Main Features',
       'features.tracking.title': 'Comprehensive Financial Tracking',
@@ -93,6 +106,8 @@ document.addEventListener('DOMContentLoaded', function() {
       'features.automation.desc': 'Quick access, recurring transactions, and home screen widgets for fast transaction entry.',
       'features.customize.title': 'Customizable Experience',
       'features.customize.desc': 'Choose between light and dark mode and use the app in multiple languages.',
+      'features.ai.title': 'AI Financial Coach',
+      'features.ai.desc': 'Budget planning, expense analysis, and savings tips based on your real transaction data.',
       'features.export.title': 'Import & Export',
       'features.export.desc': 'Import transactions from CSV files and export your data for use with other tools.',
       'screenshots.title': 'App Screenshots',
@@ -128,13 +143,24 @@ document.addEventListener('DOMContentLoaded', function() {
       'languages.russian': 'Russian',
       'download.title': 'Download Now',
       'download.subtitle': 'Take control of your personal finances without compromising on privacy or security.',
-      'download.button': 'Download Beta App',
+      'download.button': 'Download App',
       'download.compatibility': 'CashProtector is available for iPhone and iPad with iOS 18 or newer.',
       'contact.title': 'Contact',
       'contact.subtitle': 'Have questions about the app? Feel free to reach out!',
       'contact.support.title': 'Get Support',
       'contact.support.desc': 'For questions about the app or to provide feedback, you can reach me through:',
       'contact.support.email': 'Email',
+      'ai.title1': 'Meet Your Personal',
+      'ai.title2': 'AI Financial Coach',
+      'ai.description': 'Let artificial intelligence help you make better financial decisions. Our AI coach analyzes your spending patterns and gives you personalized recommendations.',
+      'ai.feature1.title': 'Smart Budget Planning',
+      'ai.feature1.desc': 'Automatically create budgets based on the proven 50/30/20 rule and your real spending data.',
+      'ai.feature2.title': 'Expense Analysis',
+      'ai.feature2.desc': 'Discover hidden savings potential and get tips to optimize your spending.',
+      'ai.feature3.title': 'Personalized Savings Tips',
+      'ai.feature3.desc': 'Get tailored recommendations based on your individual financial habits.',
+      'ai.demo.title': 'AI Financial Coach',
+      'ai.demo.input': 'Ask for budget tips...',
       'footer.imprint': 'Imprint',
       'footer.privacy': 'Privacy Policy',
       'footer.app-privacy': 'CashProtector Privacy Policy'
@@ -154,6 +180,14 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
     
+    // Update placeholder attributes
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+      const key = element.getAttribute('data-i18n-placeholder');
+      if (languages[lang][key]) {
+        element.placeholder = languages[lang][key];
+      }
+    });
+    
     // Update document language
     document.documentElement.lang = lang;
     
@@ -161,9 +195,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.screenshot-img').forEach(img => {
       const imgId = img.getAttribute('data-img-id');
       if (lang === 'en') {
-        img.src = `./img/en/${imgId}.jpg`;
+        img.src = `./img/Englisch/${imgId}.jpg`;
       } else {
-        img.src = `./img/${imgId}.jpg`;
+        img.src = `./img/Deutsch/${imgId}.jpg`;
       }
     });
     
@@ -231,4 +265,145 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  // AI Chat Demo Functionality
+  const aiChatMessages = document.getElementById('aiChatMessages');
+  
+  const demoConversations = {
+    'de': [
+      {
+        type: 'ai',
+        text: 'Hallo! Ich bin Ihr persönlicher KI-Finanzcoach. Wie kann ich Ihnen heute bei Ihren Finanzen helfen?',
+        delay: 500
+      },
+      {
+        type: 'user',
+        text: 'Kannst du mir bei der Budgetplanung helfen?',
+        delay: 2000
+      },
+      {
+        type: 'ai',
+        text: 'Gerne! Basierend auf Ihren Ausgabendaten der letzten 3 Monate empfehle ich die 50/30/20-Regel:\n\n💰 50% für Notwendigkeiten (Miete, Lebensmittel)\n🎉 30% für Wünsche (Entertainment, Hobbys)\n💳 20% für Sparen und Schuldenabbau\n\nMöchten Sie ein personalisiertes Budget erstellen?',
+        delay: 3500
+      },
+      {
+        type: 'user',
+        text: 'Ja, das klingt gut!',
+        delay: 5500
+      },
+      {
+        type: 'ai',
+        text: 'Perfekt! Ich analysiere Ihre Transaktionen und erstelle ein maßgeschneidertes Budget. Sie können alles in der App anpassen. 📊',
+        delay: 6500
+      }
+    ],
+    'en': [
+      {
+        type: 'ai',
+        text: 'Hello! I\'m your personal AI financial coach. How can I help you with your finances today?',
+        delay: 500
+      },
+      {
+        type: 'user',
+        text: 'Can you help me with budget planning?',
+        delay: 2000
+      },
+      {
+        type: 'ai',
+        text: 'Of course! Based on your spending data from the last 3 months, I recommend the 50/30/20 rule:\n\n💰 50% for needs (rent, groceries)\n🎉 30% for wants (entertainment, hobbies)\n💳 20% for savings and debt repayment\n\nWould you like to create a personalized budget?',
+        delay: 3500
+      },
+      {
+        type: 'user',
+        text: 'Yes, that sounds great!',
+        delay: 5500
+      },
+      {
+        type: 'ai',
+        text: 'Perfect! I\'ll analyze your transactions and create a tailored budget. You can adjust everything in the app. 📊',
+        delay: 6500
+      }
+    ]
+  };
+
+  function createMessage(type, text, isTyping = false) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = `chat-message ${type}`;
+    
+    const avatar = document.createElement('div');
+    avatar.className = `message-avatar ${type}`;
+    avatar.innerHTML = type === 'ai' ? '🤖' : '👤';
+    
+    const bubble = document.createElement('div');
+    bubble.className = `message-bubble ${type}`;
+    
+    if (isTyping) {
+      bubble.innerHTML = '<div class="typing-indicator"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>';
+    } else {
+      bubble.textContent = text;
+    }
+    
+    messageDiv.appendChild(avatar);
+    messageDiv.appendChild(bubble);
+    
+    return messageDiv;
+  }
+
+  function addMessage(type, text, delay = 0) {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        // Add typing indicator for AI messages
+        let typingMessage;
+        if (type === 'ai') {
+          typingMessage = createMessage('ai', '', true);
+          aiChatMessages.appendChild(typingMessage);
+          aiChatMessages.scrollTop = aiChatMessages.scrollHeight;
+        }
+
+        // Remove typing indicator and add real message after a delay
+        setTimeout(() => {
+          if (typingMessage) {
+            typingMessage.remove();
+          }
+          
+          const message = createMessage(type, text);
+          aiChatMessages.appendChild(message);
+          aiChatMessages.scrollTop = aiChatMessages.scrollHeight;
+          resolve();
+        }, type === 'ai' ? 1500 : 0);
+      }, delay);
+    });
+  }
+
+  async function startAIChatDemo() {
+    if (!aiChatMessages) return;
+    
+    // Clear existing messages
+    aiChatMessages.innerHTML = '';
+    
+    const conversation = demoConversations[currentLang] || demoConversations['de'];
+    
+    for (const message of conversation) {
+      await addMessage(message.type, message.text, message.delay);
+    }
+    
+    // Restart demo after completion
+    setTimeout(() => {
+      startAIChatDemo();
+    }, 8000);
+  }
+
+  // Start demo when page loads
+  setTimeout(() => {
+    startAIChatDemo();
+  }, 1000);
+
+  // Restart demo when language changes
+  const originalUpdateContent = updateContent;
+  updateContent = function(lang) {
+    originalUpdateContent(lang);
+    setTimeout(() => {
+      startAIChatDemo();
+    }, 500);
+  };
 });
